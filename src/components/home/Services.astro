@@ -1,0 +1,47 @@
+---
+const services = [
+  {
+    step: '01',
+    name: 'Fast results.',
+    description:
+      'Say goodbye searching through hundreds of product listings with various, confusing features. Search for what you want, right here, and get a fair price immediately.',
+  },
+  {
+    step: '02',
+    name: 'Full transparency.',
+    description:
+      "You have full control over our model's inputs as it calculates prices, ensuring complete transparency throughout the entire process.",
+  },
+  {
+    step: '03',
+    name: 'Flexible Forever',
+    description:
+      'Vintage vinyl records, handmade items, digital products. Our models are able to give comprehensive outputs for any item, giving you the flexibility and confidence to buy and sell.',
+  },
+];
+---
+
+<section class="bg-secondary py-20 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">
+        Our crazy-powerful AI gives you prices that you can trust.
+      </h2>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          services.map((service) => (
+            <div class="flex flex-col gap-12 rounded-3xl bg-primary-700/10 px-6 py-8">
+              <p class="text-md">{service.step}</p>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium">{service.name}</h3>
+                <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
