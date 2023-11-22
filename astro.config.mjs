@@ -14,8 +14,6 @@ export default defineConfig({
       customCss: [
         // Relative path to your custom CSS file
         "/src/custom.css",
-        "@fontsource/Inter/400.css",
-        "@fontsource/Inter/600.css",
       ],
       social: {
         github: "https://github.com/withastro/starlight",
